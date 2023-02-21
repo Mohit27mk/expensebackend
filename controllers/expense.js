@@ -69,7 +69,7 @@ exports.postAddExpense=async(req,res,next)=>{
 exports.getExpenses=async(req,res,next)=>{
     try{
         let page = req.params.page || 1;
-    let Items_Per_Page = +(req.params.Items_Per_Page);
+    let Items_Per_Page = +(req.params.Items_Per_Page)||2;
     console.log(page);
     console.log(Items_Per_Page);
     let totalItems;

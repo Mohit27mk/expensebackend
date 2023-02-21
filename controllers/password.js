@@ -53,7 +53,7 @@ exports.forgotPassword = async (req,res,next) => {
         to: recievers,
         subject: 'forgotpass please reset',
         textContent: `Follow the link and reset password`,
-        htmlContent: `Click on the link below to reset password <br> <a href="http://localhost:3000/password/reset/${id}">Reset password</a>`,
+        htmlContent: `Click on the link below to reset password <br> <a href="http://18.183.25.92:3000/password/reset/${id}">Reset password</a>`,
 
     }).then((response)=>{
         //console.log('after transaction');
