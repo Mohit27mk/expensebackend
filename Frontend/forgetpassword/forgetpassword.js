@@ -15,7 +15,7 @@ function onSubmit(e) {
     
     axios.post("http://18.183.25.92:3000/password/forgotpassword",myobj)
     .then((res)=>{
-        window.location.href='./login.html';
+        window.location.href='../login/login.html';
     }).catch((err)=>{
      console.log(err);
     })
