@@ -41,7 +41,7 @@ app.use('/purchase',purchaseRoutes);
 app.use('/premium',premiumFeatureRoutes);
 app.use('/password',passwordRoutes);
 app.use((req,res)=>{
-    res.sendFile(path.join(__dirname,`Frontend/${req.url}`));
+    res.sendFile(path.join(__dirname,`Frontend/login/${req.url}`));
 })
 
 User.hasMany(Expense);
