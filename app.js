@@ -33,7 +33,7 @@ const passwordRoutes=require('./routes/password');
 
 const Order = require('./models/orders');
 
-// app.use(bodyParser.json({ extended: false }));
+app.use(bodyParser.json({ extended: false }));
 
 app.use('/user',userRoutes);
 app.use('/expense',expenseRoutes);
